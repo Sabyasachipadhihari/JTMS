@@ -68,9 +68,9 @@ create table jtian_book_issue (
 );
 
 create table non_jtian_book_issue (
-	student_name varchar(30),
-	mobile_number int(10),
-	college varchar(50),
-	book_id int(2),
+	student_name varchar(30) not null,
+	mobile_number int(10) not null,
+	college varchar(50) not null,
+	book_id int(2) not null,
 	foreign key (book_id) references book (book_id)
 );
